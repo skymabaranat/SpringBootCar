@@ -23,6 +23,8 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-test:3.0.2")
+    implementation("org.mockito:mockito-junit-jupiter:5.1.1")
 
     testImplementation(platform("org.junit:junit-bom:5.9.2"))
     testImplementation(platform("io.cucumber:cucumber-bom:7.11.1"))
@@ -31,6 +33,7 @@ dependencies {
     testImplementation("io.cucumber:cucumber-junit-platform-engine")
     testImplementation("org.junit.platform:junit-platform-suite")
     testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("junit:junit:4.13.1")
 
 }
 tasks.withType<Test> {

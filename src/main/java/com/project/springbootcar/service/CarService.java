@@ -8,4 +8,8 @@ import org.springframework.web.client.RestTemplate;
 public class CarService {
     @Autowired
     private RestTemplate template = new RestTemplate();
+
+    public String generateString() {
+        return "OK";
+    }
 }
