@@ -1,0 +1,4 @@
+rootProject.name = "SpringBootCar"
+
+include("Application")
+include("Functional")
